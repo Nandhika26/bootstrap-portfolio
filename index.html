@@ -7,28 +7,25 @@
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
     <!-- <link rel="stylesheet" href="asset/css/all.min.css"> -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="asset/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-light">
+<body>
     <!-- ----------------
         NAVBAR START 
     --------------------->
-    <nav class="navbar navbar-light fixed-top bg-light shadow-sm">
-        <div class="container-lg">
-          <a class="navbar-brand text-danger fw-bold fs-4" href="#">Ka.R</a>
-          <div class="dropdown">
-            <button class="btn btn-secondary btn-danger px-3" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-                <i class="fas fa-bars"></i>
-            </button>
-            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
-              <li><a class="dropdown-item" href="#home">Home</a></li>
-              <li><a class="dropdown-item" href="#about">About</a></li>
-              <li><a class="dropdown-item" href="#project">Project</a></li>
-              <li><a class="dropdown-item" href="#contact">Contack</a></li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+    <header class="header">
+        <a href="" class="logo">Ka.R</a>
+        <i class='bx bx-menu' id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#project">Project</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
     <!-- ----------------
         NAVBAR END 
     --------------------->
@@ -36,19 +33,19 @@
     <!-- ----------------
       *HOME SECTION START 
     --------------------->
-    <section class="home py-4 bg-white" id="home">
+    <section class="home" id="home">
         <div class="container-lg ">
             <div class="row  min-vh-100 align-items-center align-content-center">
                 <div class="col-md-6 mt-5 mt-md-0">
-                    <div class="home-img text-center">
-                        <img src="image/home1.png" class="rounded-circle mw-100" alt="profile img">
+                    <div class="home-img">
+                        <img src="image/home1.png" class="img-home" alt="profile img">
                     </div>
                 </div>
                 <div class="col-md-6 mt-5 mt-md-0 order-md-first">
                     <div class="home-text">
-                        <p class="text-muted mb-1">Hello I'm</p>
-                        <h1 class="text-danger text-uppercase" fs-2 fw-bold>Web Desainer</h1>
-                        <h2 class="fs-4">Nandhika Diega Pratama</h2>
+                        <h1 class="text-hello">Hello I'm</h1>
+                        <h1 class="text-uppercase" fs-2 fw-bold>Web Desainer</h1>
+                        <h2 class="text-h2">Nandhika Diega Pratama</h2>
                         <p class="mt-4 text-muted"><strong>I am a student from SMK NEGERI 1 KARAWANG majoring in <br>Software Engineering (RPL)</strong></p>
                         <a href="#about" class="btn btn-danger px-3 mt-3">About Me</a>
                     </div>
@@ -63,10 +60,10 @@
     <!-- ----------------
       *ABOUT SECTION START
     --------------------->
-        <section class="about bg-light py-4" id="about">
+        <section class="about py-4" id="about">
             <div class="container-lg">
                 <div class="row justify-content-center">
-                    <div class="col-lg-8">
+                    <div class="col-lg-8 mb-5">
                         <div class="section-title text-center">
                             
                         </div>
@@ -100,11 +97,9 @@
                                 </div>
                                 <div class="row"></div>
                                     <div class="social-link col-md-16">
-                                        <a href="" class="text-dark me-4"><i class="fab fa-facebook-f"></i></a>
-                                        <a href="" class="text-dark me-3"><i class="fab fa-twitter"></i></a>
-                                        <a href="" class="text-dark me-3"><i class="fab fa-instagram"></i></a>
-                                        <a href="" class="text-dark me-3"><i class="fab fa-tiktok"></i></a>
-                                        <a href="" class="text-dark me-4"><i class="fab fa-youtube"></i></a>
+                                        <a href="https://x.com/NanZion?s=09" class="text-dark me-3"><i class="fab fa-twitter"></i></a>
+                                        <a href="https://www.instagram.com/kveryvely/" class="text-dark me-3"><i class="fab fa-instagram"></i></a>
+                                        <a href="https://www.tiktok.com/@nandhika_kanaa?is_from_webapp=1&sender_device=pc" class="text-dark me-3"><i class="fab fa-tiktok"></i></a>
                                     </div>
                                 </div>
                                 </div>
@@ -147,7 +142,7 @@
             </div>
             <div class="row text-center">
                 <div class="col-md-6 col-lg-4">
-                    <div class="service-item shadow-sm p-4 rounded bg-white">
+                    <div class="service-item shadow-sm p-4 rounded bg-white mb-5">
                         <div class="icon my-3 text-danger fs-2">
                             <i class="fas fa-code"></i>
                         </div>
@@ -156,7 +151,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4">
-                    <div class="service-item shadow-sm p-4 rounded bg-white">
+                    <div class="service-item shadow-sm p-4 rounded bg-white mb-5">
                         <div class="icon my-3 text-danger fs-2">
                             <i class="fas fa-camera-retro"></i>
                         </div>
@@ -179,7 +174,7 @@
     <!-- ----------------
       *PROJECT SECTION START
     --------------------->
-        <section class="project" id="project">
+        <section class="project py-4" id="project">
             <div class="container-lg py-5">
                 <div class="row justify-content-center">
                     <div class="col-lg-8 col-md-4">
@@ -228,7 +223,7 @@
                         <div class="portfolio-item">
                             <img src="image/Screenshot (114).png" class="w-100 img-thumbnail shadow-sm" alt="portfolio item">
                             <h3 class="text-capitalixe text-center text-muted">My Portfolio</h3>
-                            <p class="text-center"><a href="https://nandhika26.github.io/My-Portfolio/" class="text-danger">Live Demo</a></p>
+                            <p class="text-center"><a href="#project" class="text-danger">Live Demo</a></p>
                         </div>
                     </div>
                 </div>
@@ -246,7 +241,7 @@
             <div class="row justify-content-center">
                 <div class="col-lg-8">
                     <div class="section-title text-center">
-                        <h2 class="fw-bold mb-5">Contact Me</h2>
+                        <h2 class="fw-bold mb-5 text-light mt-4">Contact Me</h2>
                     </div>
                 </div>
             </div>
@@ -257,8 +252,8 @@
                             <i class="fas fa-envelope"></i>
                         </div>
                         <div class="text ms-3">
-                            <h3 class="fs-5">Email</h3>
-                            <p class="text-muted">dieganandhika2gmail.com</p>
+                            <h3 class="fs-5 text-light">Email</h3>
+                            <a href="mailto:dieganandhika@gmail.com" class="contact-link">dieganandhika@gmail.com</a>
                         </div>
                     </div>
                     <div class="contact-item d-flex mb-3">
@@ -266,17 +261,17 @@
                             <i class="fab fa-github"></i>
                         </div>
                         <div class="text ms-3">
-                            <h3 class="fs-5">Github</h3>
-                            <p class="text-muted">https://github.com/Nandhika26</p>
+                            <h3 class="fs-5 text-light">Github</h3>
+                            <a href="https://github.com/Nandhika26" class="contact-link">Nandhika26</a>
                         </div>
                     </div>
                     <div class="contact-item d-flex mb-3">
-                        <div class="icon fs-4 text-danger">
-                            <i class="fas fa-phone"></i>
+                        <div class="icon fs-1 text-danger">
+                            <i class="fas fa-map-pin"></i>
                         </div>
                         <div class="text ms-3">
-                            <h3 class="fs-5">Telephone</h3>
-                            <p class="text-muted">0812-9182-3282</p>
+                            <h3 class="fs-5 text-light">Location</h3>
+                            <p class=""> Karawang, Jawa Barat</p>
                         </div>
                     </div>  
                 </div>
@@ -329,5 +324,6 @@
 
 
     <script src="asset/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
